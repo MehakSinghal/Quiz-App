@@ -56,6 +56,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     color: Colors.blue,
                     onPressed: () {
                       showDialog(
+                        barrierDismissible: false,
                           context: context,
                           builder: (ctx) => AlertDialog(
                                 title: Text(
@@ -68,12 +69,9 @@ class _QuizScreenState extends State<QuizScreen> {
                               FlatButton(child: Text("DONE"), onPressed: (){
                                 Navigator.of(context).pop();
                                 Navigator.of(context).pop();
-                                /*Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => Dashboard()));*/
                               },)
                             ],
                               ));
-                      print(_result);
                     },
                   ),
                 ],

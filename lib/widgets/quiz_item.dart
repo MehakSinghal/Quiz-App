@@ -4,7 +4,7 @@ class QuizItem extends StatefulWidget {
   Map<String, dynamic> data;
   int number;
   Function score;
-  //QuizItem(this.data, this.number, this.score);
+  QuizItem(this.data, this.number, this.score);
 
   @override
   _QuizItemState createState() => _QuizItemState();
