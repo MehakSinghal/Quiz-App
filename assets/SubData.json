@@ -1,0 +1,132 @@
+[
+  [
+    {
+      "Question": "What is the colour of the Sun?",
+      "Answer": [
+        {
+          "text": "Yellow",
+          "score": 1
+        },
+        {
+          "text": "Red",
+          "score": 0
+        },
+        {
+          "text": "Orange",
+          "score": 0
+        },
+        {
+          "text": "Green",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "Question": "Where does the sun set ?",
+      "Answer": [
+        {
+          "text": "East",
+          "score": 0
+        },
+        {
+          "text": "North",
+          "score": 0
+        },
+        {
+          "text": "West",
+          "score": 1
+        },
+        {
+          "text": "South",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "Question": "How many planets are there in the solar system?",
+      "Answer": [
+        {
+          "text": "10",
+          "score": 1
+        },
+        {
+          "text": "8",
+          "score": 1
+        },
+        {
+          "text": "9",
+          "score": 0
+        },
+        {
+          "text": "11",
+          "score": 0
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "Question": "Addition is a?",
+      "Answer": [
+        {
+          "text": "Logical operation",
+          "score": 0
+        },
+        {
+          "text": "Arithmetic Operation",
+          "score": 1
+        },
+        {
+          "text": "Exponential Operation",
+          "score": 0
+        },
+        {
+          "text": "None",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "Question": "Are log and ln same?",
+      "Answer": [
+        {
+          "text": "No, They differ by some factor",
+          "score": 1
+        },
+        {
+          "text": "Yes they are same",
+          "score": 0
+        },
+        {
+          "text": "Cannot say",
+          "score": 0
+        },
+        {
+          "text": "None",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "Question": "Sine/cosine is ?",
+      "Answer": [
+        {
+          "text": "Cotangent",
+          "score": 0
+        },
+        {
+          "text": "Secant",
+          "score": 0
+        },
+        {
+          "text": "Cosecant",
+          "score": 0
+        },
+        {
+          "text": "Tangent",
+          "score": 1
+        }
+      ]
+    }
+  ]
+]
