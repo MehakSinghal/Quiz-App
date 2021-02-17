@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class DashboardItem extends StatelessWidget {
   String title;
-  DashboardItem(this.title);
+  DashboardItem(this.title);    //Constructor
   @override
   Widget build(BuildContext context) {
     return Container(

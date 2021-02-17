@@ -30,7 +30,6 @@ class _QuizScreenState extends State<QuizScreen> {
       body: FutureBuilder(
         builder: (context, snapshot) {
           var showData = json.decode(snapshot.data.toString());
-          //print(showData[widget.i]);
           if (snapshot.hasData) {
             return SingleChildScrollView(
               physics: ScrollPhysics(),

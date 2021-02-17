@@ -12,18 +12,18 @@ class QuizItem extends StatefulWidget {
 
 class _QuizItemState extends State<QuizItem> {
   List<bool> x ;
-  int selected;
+  int selectedGroupValue;
 
   @override
   void initState() {
-   selected = -1;
+   selectedGroupValue = -1;
    x = [false, false, false, false];
     super.initState();
   }
 
-  void selectedVal(int val){
+  void selectedGroupVal(int val){
     setState(() {
-      selected = val;
+      selectedGroupValue = val;
       for(int k=0 ; k<4 ;k++){
         if(x[k]){
           x[k]=false;
@@ -33,9 +33,6 @@ class _QuizItemState extends State<QuizItem> {
       x[val]=!x[val];
       if(x[val]){
         widget.score(widget.data['Answer'][val]['score']);
-      }
-      else{
-        widget.score(-widget.data['Answer'][val]['score']);
       }
     });
   }
@@ -61,9 +58,9 @@ class _QuizItemState extends State<QuizItem> {
             activeColor: Colors.blue,
             value: 0,
             title: Text(widget.data['Answer'][0]['text']),
-            groupValue: selected,
+            groupValue: selectedGroupValue,
             onChanged: (val){
-              selectedVal(val);
+              selectedGroupVal(val);
             },
             selected: x[0],
           ),
@@ -71,9 +68,9 @@ class _QuizItemState extends State<QuizItem> {
             activeColor: Colors.blue,
             value: 1,
             title: Text(widget.data['Answer'][1]['text']),
-            groupValue: selected,
+            groupValue: selectedGroupValue,
             onChanged: (val){
-              selectedVal(val);
+              selectedGroupVal(val);
             },
             selected: x[1],
           ),
@@ -81,9 +78,9 @@ class _QuizItemState extends State<QuizItem> {
             activeColor: Colors.blue,
             value: 2,
             title: Text(widget.data['Answer'][2]['text']),
-            groupValue: selected,
+            groupValue: selectedGroupValue,
             onChanged: (val){
-              selectedVal(val);
+              selectedGroupVal(val);
             },
             selected: x[2],
           ),
@@ -91,9 +88,9 @@ class _QuizItemState extends State<QuizItem> {
             activeColor: Colors.blue,
             value: 3,
             title: Text(widget.data['Answer'][3]['text']),
-            groupValue: selected,
+            groupValue: selectedGroupValue,
             onChanged: (val){
-              selectedVal(val);
+              selectedGroupVal(val);
             },
             selected: x[3],
           ),
